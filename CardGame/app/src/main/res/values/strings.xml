@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HarryPotter</string>
+    <string-array name="Modlar">
+        <item>Kolay</item>
+        <item>Orta</item>
+        <item>Zor</item>
+    </string-array>
+
+</resources>

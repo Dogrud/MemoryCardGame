@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/yildizlar"
+    android:onClick="KayitYap"
+    tools:context=".frontend.Kaydol">
+
+    <EditText
+        android:id="@+id/TextName"
+        android:layout_width="319dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="58dp"
+        android:ems="10"
+        android:hint="Kullanıcı Adı"
+        android:inputType="textPersonName"
+        android:textColor="#DFD9D9"
+        android:textColorHint="#9A9090"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/TextPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/TextPassword"
+        android:layout_width="321dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="Parola"
+        android:inputType="textPassword"
+        android:textColor="#DFD9D9"
+        android:textColorHint="#9A9090"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/TextPasswordRepait"
+        app:layout_constraintEnd_toEndOf="@+id/TextName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TextName"
+        app:layout_constraintTop_toBottomOf="@+id/TextName" />
+
+    <EditText
+        android:id="@+id/TextPasswordRepait"
+        android:layout_width="322dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Parola Tekrar"
+        android:inputType="textPassword"
+        android:textColor="#DFD9D9"
+        android:textColorHint="#9A9090"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/TextPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/TextPassword" />
+
+    <EditText
+        android:id="@+id/TextEmailAddress"
+        android:layout_width="322dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:onClick="KayitYap"
+        android:textColor="#DFD9D9"
+        android:textColorHint="#9A9090"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/TextPasswordRepait"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TextPasswordRepait"
+        app:layout_constraintTop_toBottomOf="@+id/TextPasswordRepait" />
+
+    <Button
+        android:id="@+id/buttonKayıtOl"
+        android:layout_width="133dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/button"
+        android:onClick="KayitYap"
+        android:text="Kaydol"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/message"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/message"
+        app:layout_constraintTop_toBottomOf="@+id/TextEmailAddress" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="293dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="25dp"
+        android:textColor="#CFBABA"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonKayıtOl"
+        app:layout_constraintEnd_toEndOf="@+id/TextEmailAddress"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/TextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/TextEmailAddress"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

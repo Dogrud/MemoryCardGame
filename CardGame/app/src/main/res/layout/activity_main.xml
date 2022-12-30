@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/yildizlar"
+    tools:context=".frontend.MainActivity">
+
+    <Button
+        android:id="@+id/buttonGiris"
+        android:layout_width="149dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="264dp"
+        android:background="@drawable/button"
+        android:backgroundTint="#70C673"
+        android:onClick="GirisYap"
+        android:text="Giriş"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/textName"
+        android:layout_width="332dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="3dp"
+        android:ems="10"
+        android:hint="Kullanıcı Adı"
+        android:inputType="textPersonName"
+        android:textColor="#EFEAEA"
+        android:textColorHint="#837F7F"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textPassword"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:hint="Parola"
+        android:inputType="textPassword"
+        android:textColor="#EFEAEA"
+        android:textColorHint="#837F7F"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textMessage"
+        app:layout_constraintEnd_toEndOf="@+id/textName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textName"
+        app:layout_constraintTop_toBottomOf="@+id/textName" />
+
+    <Button
+        android:id="@+id/buttonKaydol"
+        android:layout_width="152dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="259dp"
+        android:background="@drawable/button"
+        android:backgroundTint="#70C673"
+        android:onClick="KaydolSinifinaGit"
+        android:text="Kaydol"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonGiris"
+        app:layout_constraintTop_toTopOf="@+id/buttonGiris"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textMessage"
+        android:layout_width="304dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="39dp"
+        android:textColor="#C6AAAA"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonKaydol"
+        app:layout_constraintEnd_toEndOf="@+id/buttonKaydol"
+        app:layout_constraintStart_toStartOf="@+id/buttonGiris"
+        app:layout_constraintTop_toBottomOf="@+id/textPassword" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMusic"
+        android:layout_width="46dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/yildizlar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
