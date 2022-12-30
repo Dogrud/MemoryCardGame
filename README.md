@@ -8,4 +8,4 @@ Kotlin ile Harry Potter temalı bir hafıza oyunu
 
 Proje Kotlin ile yazıldı Cloud Database olarak Firebase kullanıldı. Kullanıcılar anlık olarak kayıt olup giriş yapabiliyor
 
-
+![](CardGame/images/image1.png)
