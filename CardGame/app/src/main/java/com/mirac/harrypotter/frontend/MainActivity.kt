@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
         textMessage.text = ""
     }
 
-    fun GirisYap(view: View){
+    fun Login(view: View){
         val name = textName.text.toString()
         val password = textPassword.text.toString()
         var kontrol:Boolean = false
@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    fun KaydolSinifinaGit(view: View){
+    fun GoToSignUpClass(view: View){
         var intent = Intent(applicationContext, Kaydol::class.java)
         startActivity(intent)
     }

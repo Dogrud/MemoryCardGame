@@ -152,9 +152,6 @@ class MediumModeSingle : AppCompatActivity() {
             point += business.puanHesaplaWithTime(cards.get(position1),cards.get(position2),remainTime,totalTime/1000,true)
             cards.get(position1).isMatched = true
             cards.get(position2).isMatched = true
-            var timeover = MediaPlayer.create(applicationContext,R.raw.ismatch)
-            timeover.start()
-            timeover.setVolume(10F,10F)
         }else{
             point += business.puanHesaplaWithTime(cards.get(position1),cards.get(position2),remainTime,totalTime/1000,false)
         }

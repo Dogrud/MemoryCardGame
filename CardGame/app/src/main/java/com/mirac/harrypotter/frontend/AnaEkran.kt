@@ -43,7 +43,7 @@ class AnaEkran : AppCompatActivity() {
         })
     }
 
-    fun oyunEkraninaGit(view: View){
+    fun Start(view: View){
         mesaj.text = ""
 
         var rdGroupMod = findViewById<RadioGroup>(R.id.radioGroupMod)

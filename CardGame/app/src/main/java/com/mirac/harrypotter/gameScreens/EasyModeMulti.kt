@@ -155,9 +155,6 @@ class EasyModeMulti : AppCompatActivity() {
             }
             cards.get(position1).isMatched = true
             cards.get(position2).isMatched = true
-            var timeover = MediaPlayer.create(applicationContext,R.raw.ismatch)
-            timeover.start()
-            timeover.setVolume(10F,10F)
         }else{
             if(playPerson ==1){
                 point1 += business.puanHesapla(cards.get(position1),cards.get(position2),false)

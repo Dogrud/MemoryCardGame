@@ -23,11 +23,11 @@ class Kaydol : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_kaydol)
         auth = Firebase.auth
-        fireBaseVerieriAl()
+        fireBaseDataPull()
     }
 
 
-    fun KayitYap(view: View){
+    fun SignUp(view: View){
         message.text = ""
         var userName = TextName.text.toString()
         var password = TextPassword.text.toString()
@@ -79,7 +79,7 @@ class Kaydol : AppCompatActivity() {
     }
 
 
-    fun fireBaseVerieriAl(){
+    fun fireBaseDataPull(){
         db.collection("Users").addSnapshotListener { snapshot, error ->
             if(error != null){
                 Toast.makeText(this,error.localizedMessage,Toast.LENGTH_LONG).show()
