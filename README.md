@@ -1,13 +1,13 @@
 # Memory-Card-Game
 
-Kotlin ile Harry Potter temalı bir hafıza oyunu
+Harry Potter themed memory game with Kotlin.
 
-- Hafıza Oyunumuzda kolay, orta ve zor olamk üzere 3 modumuz var. Bunun yanında single ve multi player modlarımızda bulunmakta. Yani totalde 6 farklı oyun seçeneği bulunmakta.
-- Oyunun mantığı verilen süre içinde aynı kartları bulabilmek. 
-- Her kartın kendine ait bir puanı ve evi var o evlerinde kendine ait puanları var. Her kart açıldığunda Puan hesaplama işlemi sürede baz alınarak hesaplanıyor.   
+- We have 3 difficulty modes in our memory game. They are easy , medium and hard modes. There are single and multiplayer game options.
+- The logic of the game is to match the same cards within the given time and gaining as much as point meanwhile. 
+- Each card has its own point and belongs to a house. Each house has their own points. Each time a card is opened, the point calculation process is calculated based on time.
 <img src="CardGame/images/imagePoint.png" width="450">
 
-**Proje Kotlin ile yazıldı Cloud Database olarak Firebase kullanıldı. Kullanıcılar anlık olarak kayıt olup giriş yapabiliyor.**
+**The project is written in Kotlin and Firebase is used as the Cloud Database.**
 
 <img src="CardGame/images/image1.png" width="200"> <img src="CardGame/images/image2.png" width="200"> <img src="CardGame/images/image3.png" width="200">
 <img src="CardGame/images/image4.png" width="200">
