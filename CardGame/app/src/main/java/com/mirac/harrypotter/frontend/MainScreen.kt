@@ -1,8 +1,6 @@
 package com.mirac.harrypotter.frontend
 
-import android.content.Context
 import android.content.Intent
-import android.media.AudioManager
 import android.os.Bundle
 import android.view.View
 import android.widget.RadioButton
@@ -15,19 +13,17 @@ import com.mirac.harrypotter.AllCards
 import com.mirac.harrypotter.R
 import com.mirac.harrypotter.entities.Cards
 import com.mirac.harrypotter.gameScreens.*
-import kotlinx.android.synthetic.main.activity_ana_ekran.*
+import kotlinx.android.synthetic.main.activity_game_screen.*
 
 
-class AnaEkran : AppCompatActivity() {
+class MainScreen : AppCompatActivity() {
     val db = Firebase.firestore
     var musicButton = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_ana_ekran)
+        setContentView(R.layout.activity_game_screen)
         fireBaseVerieriAl()
-
-        //var audioManager = getSystemService(Context.AUDIO_SERVICE) as AudioManager
 
         imageButtonMusic1.setOnClickListener(View.OnClickListener {
             musicButton = !musicButton
@@ -53,45 +49,45 @@ class AnaEkran : AppCompatActivity() {
         var selectBtnCesid:Int = rdGroupCesid!!.checkedRadioButtonId
 
         if(selectBtnMod == -1 && selectBtnCesid== -1){
-            mesaj.text = "Lütfen Oyun modu ve çeşidini seçiniz"
+            mesaj.text = "Please select Game mode and type of game"
             return
         }else if(selectBtnMod == -1){
-            mesaj.text = "Lütfen oyun modunu seçiniz"
+            mesaj.text = "Please select Game mode"
             return
         }else if(selectBtnCesid == -1){
-            mesaj.text = "Lütfen oyun çeşidini seçiniz"
+            mesaj.text = "Please select type of game"
             return
         }
 
         var buttonMod = findViewById<RadioButton>(selectBtnMod)
         var buttonCesid = findViewById<RadioButton>(selectBtnCesid)
 
-        if (buttonMod.text == "Kolay"){
-            if(buttonCesid.text == "Tek Oyunculu"){
+        if (buttonMod.text == "Easy"){
+            if(buttonCesid.text == "Single Player"){
                 var intent = Intent(applicationContext, EasyModeSingle::class.java)
                 startActivity(intent)
-            }else if(buttonCesid.text == "Çok Oyunculu"){
+            }else if(buttonCesid.text == "Multiplayer"){
                 var intent = Intent(applicationContext, EasyModeMulti::class.java)
                 startActivity(intent)
             }
-        }else if (buttonMod.text == "Orta"){
-            if(buttonCesid.text == "Tek Oyunculu"){
+        }else if (buttonMod.text == "Middle"){
+            if(buttonCesid.text == "Single Player"){
                 var intent = Intent(applicationContext, MediumModeSingle::class.java)
                 startActivity(intent)
-            }else if(buttonCesid.text == "Çok Oyunculu"){
+            }else if(buttonCesid.text == "Multiplayer"){
                 var intent = Intent(applicationContext, MediumModeMulti::class.java)
                 startActivity(intent)
             }
-        }else if(buttonMod.text == "Zor"){
-            if(buttonCesid.text == "Tek Oyunculu"){
+        }else if(buttonMod.text == "Hard"){
+            if(buttonCesid.text == "Single Player"){
                 var intent = Intent(applicationContext, HardModelSingle::class.java)
                 startActivity(intent)
-            }else if(buttonCesid.text == "Çok Oyunculu"){
+            }else if(buttonCesid.text == "Multiplayer"){
                 var intent = Intent(applicationContext, HardModelMulti::class.java)
                 startActivity(intent)
             }
         }else{
-            mesaj.text = "Lütfen Oyun Modu seçiniz"
+            mesaj.text = "Please select Game mode"
         }
 
     }

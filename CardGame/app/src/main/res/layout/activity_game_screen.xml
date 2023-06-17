@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/image2"
-    tools:context=".frontend.AnaEkran">
+    tools:context=".frontend.MainScreen">
 
 
     <RadioGroup
@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#013A29"
-            android:text="Tek Oyunculu"
+            android:text="Single Player"
             android:textColor="#D0D9DF"
             android:textSize="20sp" />
 
@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#013A29"
-            android:text="Çok Oyunculu"
+            android:text="Multiplayer"
             android:textColor="#D0D9DF"
             android:textSize="20sp" />
 
@@ -67,7 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#BDA55E"
-            android:text="Kolay"
+            android:text="Easy"
             android:textAlignment="center"
             android:textColor="#E8E3E3"
             android:textSize="20sp"
@@ -78,7 +78,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#3B8C49"
-            android:text="Orta"
+            android:text="Middle"
             android:textAlignment="center"
             android:textColor="#E8E3E3"
             android:textSize="20sp"
@@ -89,7 +89,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#AF433B"
-            android:text="Zor"
+            android:text="Hard"
             android:textAlignment="center"
             android:textColor="#E8E3E3"
             android:textSize="20sp"
@@ -102,7 +102,7 @@
         android:layout_height="30dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="72dp"
-        android:text="Oyun Modu"
+        android:text="Game Mode"
         android:textAlignment="center"
         android:textColor="#EFE9E9"
         android:textSize="16sp"
@@ -115,7 +115,7 @@
         android:layout_width="138dp"
         android:layout_height="28dp"
         android:layout_marginEnd="52dp"
-        android:text="Oyun Çeşidi"
+        android:text="Type of Game"
         android:textAlignment="center"
         android:textColor="#E4DEDE"
         android:textSize="16sp"

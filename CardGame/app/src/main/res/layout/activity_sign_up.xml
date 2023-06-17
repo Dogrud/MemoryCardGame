@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/yildizlar"
     android:onClick="KayitYap"
-    tools:context=".frontend.Kaydol">
+    tools:context=".frontend.SignUp">
 
     <EditText
         android:id="@+id/TextName"

@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.mirac.harrypotter.R
-import com.mirac.harrypotter.frontend.AnaEkran
+import com.mirac.harrypotter.frontend.MainScreen
 import kotlinx.android.synthetic.main.activity_game_over.*
 
 class GameOverActivity : AppCompatActivity() {
@@ -39,7 +39,7 @@ class GameOverActivity : AppCompatActivity() {
         }
 
         buttonMenu.setOnClickListener(View.OnClickListener {
-            var intent = Intent(applicationContext, AnaEkran::class.java)
+            var intent = Intent(applicationContext, MainScreen::class.java)
             startActivity(intent)
             mediaPlayer.pause()
             finish()
@@ -47,7 +47,7 @@ class GameOverActivity : AppCompatActivity() {
     }
 
     fun GoToAnaEkran(view: View){
-        var intent = Intent(applicationContext, AnaEkran::class.java)
+        var intent = Intent(applicationContext, MainScreen::class.java)
         startActivity(intent)
         finish()
     }

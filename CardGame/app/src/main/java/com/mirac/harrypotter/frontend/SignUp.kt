@@ -11,9 +11,9 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.mirac.harrypotter.R
 import com.mirac.harrypotter.entities.Users
-import kotlinx.android.synthetic.main.activity_kaydol.*
+import kotlinx.android.synthetic.main.activity_sign_up.*
 
-class Kaydol : AppCompatActivity() {
+class SignUp : AppCompatActivity() {
     val db = Firebase.firestore
     private lateinit var auth : FirebaseAuth
     var users = ArrayList<Users>()
@@ -21,7 +21,7 @@ class Kaydol : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_kaydol)
+        setContentView(R.layout.activity_sign_up)
         auth = Firebase.auth
         fireBaseDataPull()
     }
@@ -34,12 +34,12 @@ class Kaydol : AppCompatActivity() {
         var email = TextEmailAddress.text.toString()
 
         if(password.length == 0 || TextPasswordRepait.text.toString().length == 0 ||userName.length == 0 || email.length == 0){
-            message.text = "Boş bırakılan alanlar mevcut"
+            message.text = "There are blank fields"
             return
         }
 
         if(!TextPassword.text.toString().equals(TextPasswordRepait.text.toString())) {
-            message.text = "Girdiğiniz parolalar eşleşmemektedir"
+            message.text = "The passwords you entered do not match"
             return
         }
 
@@ -47,12 +47,12 @@ class Kaydol : AppCompatActivity() {
         if(checkName(user)){
             addUser(user)
 
-            Toast.makeText(applicationContext, "Başarıyla kayıt olundu", Toast.LENGTH_SHORT).show()
+            Toast.makeText(applicationContext, "Successfully registered", Toast.LENGTH_SHORT).show()
             var intent = Intent(applicationContext, MainActivity::class.java)
             startActivity(intent)
             finish()
         }else{
-            message.text = "Girdiğiniz kullanıcı adı mevcut"
+            message.text = "The username you entered exists"
         }
 
     }

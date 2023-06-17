@@ -1,7 +1,6 @@
 package com.mirac.harrypotter.frontend
 
 import android.content.Intent
-import android.media.MediaParser
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -60,18 +59,18 @@ class MainActivity : AppCompatActivity() {
         }
 
         if(kontrol){
-            var intent = Intent(applicationContext, AnaEkran::class.java)
-            Toast.makeText(applicationContext, "Hoşgeldin "+name, Toast.LENGTH_SHORT).show()
+            var intent = Intent(applicationContext, MainScreen::class.java)
+            Toast.makeText(applicationContext, "Welcome "+name, Toast.LENGTH_SHORT).show()
             startActivity(intent)
             finish()
         }else{
-            textMessage.text = "Kullanıcı adı veya parola hatalı"
+            textMessage.text = "Username or password is incorrect"
         }
     }
 
 
     fun GoToSignUpClass(view: View){
-        var intent = Intent(applicationContext, Kaydol::class.java)
+        var intent = Intent(applicationContext, SignUp::class.java)
         startActivity(intent)
     }
 

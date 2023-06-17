@@ -62,14 +62,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".frontend.AnaEkran"
+            android:name=".frontend.MainScreen"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".frontend.Kaydol"
+            android:name=".frontend.SignUp"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
