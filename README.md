@@ -10,4 +10,4 @@ Harry Potter themed memory game with Kotlin.
 **The project is written in Kotlin and Firebase is used as the Cloud Database.**
 
 <img src="CardGame/images/image1.png" width="200"> <img src="CardGame/images/image2.png" width="200"> <img src="CardGame/images/image3.png" width="200">
-<img src="CardGame/images/image4.png" width="200">
+<img src="CardGame/images/image4.png" width="200"> 
