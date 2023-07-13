@@ -11,3 +11,6 @@ Harry Potter themed memory game with Kotlin.
 
 <img src="CardGame/images/image1.png" width="200"> <img src="CardGame/images/image2.png" width="200"> <img src="CardGame/images/image3.png" width="200">
 <img src="CardGame/images/image4.png" width="200"> 
+
+# How to operate ?
+it is necessary to pull the project locally and run the cardGame file in Android Studio.
